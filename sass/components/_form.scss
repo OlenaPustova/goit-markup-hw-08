@@ -1,0 +1,108 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.form-title {
+  @include font(20px, 700, 1.15, 0.03em);
+
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: var(--title-text-color);
+  .form-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.comments {
+  margin-bottom: 20px;
+}
+
+.form-textarea {
+  font-size: 14px;
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+}
+
+.policy {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  &-text {
+    @include centered-flex;
+    @include font(14px, null, 1.71);
+  }
+}
+
+.policy-check-svg {
+  @include centered-flex;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.policy-link {
+  color: var(--accent-color);
+}
+
+.icon-check {
+  fill: transparent;
+}
+
+.policy-check:checked + .policy-text > .policy-check-svg {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.policy-check:checked + .policy-text .icon-check {
+  fill: var(--primary-white-color);
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.button-submit {
+  padding: 10px 55px;
+}
