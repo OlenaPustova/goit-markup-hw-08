@@ -1,9 +1,14 @@
 .services {
-  padding-top: 0;
-  &-list {
-    display: flex;
-    flex-wrap: wrap;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0;
   }
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services-list__item {
