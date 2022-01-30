@@ -1,11 +1,21 @@
 .features-list {
-  display: flex;
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .features-list__item {
-  width: 270px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
   }
 }
 
@@ -27,6 +37,11 @@
   @include font($fw: null);
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .features__text {
