@@ -113,11 +113,9 @@
 }
 
 .subscribe-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
+  @include centered-flex;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
   }
 }
 

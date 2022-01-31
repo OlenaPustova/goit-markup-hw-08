@@ -18,18 +18,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header  -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
+        <a href="./index.html" class="header__logo logo link"
+          >Web<span class="logo__item">Studio</span></a
+        >
         <nav class="nav">
-          <a href="./index.html" class="header__logo logo link"
-            >Web<span class="logo__item">Studio</span></a
-          >
           <ul class="nav-list list">
             <li class="nav-list__item">
               <a href="./index.html" class="nav-list__link link current">Студия</a>
@@ -65,8 +64,66 @@
             >
           </li>
         </ul>
+
+        <button type="button" class="menu-open__btn">
+          <svg class="menu-open__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu-burger-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="burger-menu is-hidden">
+        <div class="container">
+          <button type="button" class="menu-close__btn">
+            <svg class="menu-close__icon" width="40" height="40">
+              <use href="./images/icons.svg#menu-close-icon"></use>
+            </svg>
+          </button>
+          <div class="burger-menu__top">
+            <nav class="burger-nav">
+              <ul class="burger-nav__list list">
+                <li class="burger-nav__item">
+                  <a href="./index.html" class="burger-nav__link link current">Студия</a>
+                </li>
+                <li class="burger-nav__item">
+                  <a href="./portfolio.html" class="burger-nav__link link">Портфолио</a>
+                </li>
+                <li class="burger-nav__item">
+                  <a href="#" class="burger-nav__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="burger-menu__bottom">
+            <ul class="burger-contacts list">
+              <li class="burger-contacts__item-tel">
+                <a href="tel:+380961111111" class="burger-contacts__link link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="burger-contacts__item-mail">
+                <a href="mailto:info@devstudio.com" class="burger-contacts__link link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="burger-social__list list">
+              <li class="burger-social__item">
+                <a href="" target="_blank" class="burger-social__link link">Instagram</a>
+              </li>
+              <li class="burger-social__item">
+                <a href="" target="_blank" class="burger-social__link link">Twitter</a>
+              </li>
+              <li class="burger-social__item">
+                <a href="" target="_blank" class="burger-social__link link">Facebook</a>
+              </li>
+              <li class="burger-social__item">
+                <a href="" target="_blank" class="burger-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- main section  -->
 
@@ -408,10 +465,7 @@
                 ></a>
               </li>
               <li class="social-list__item">
-                <a
-                  href=""
-                  target="_blank"
-                  class="social-list__link-footer social-list__link link icon-linkedin"
+                <a href="" target="_blank" class="social-list__link-footer social-list__link link"
                   ><svg class="social-list__icon">
                     <use href="./images/icons.svg#icon-linkedin"></use></svg
                 ></a>
@@ -509,5 +563,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
