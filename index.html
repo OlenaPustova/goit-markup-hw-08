@@ -358,64 +358,66 @@
 
     <!-- footer  -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
-        <div class="footer-contacts">
-          <a href="./index.html" class="footer__logo logo link"
-            >Web<span class="logo__item">Studio</span></a
-          >
-          <address>
-            <ul class="footer-list list">
-              <li class="footer-list__item">
+        <div class="footer__wrap">
+          <div class="footer-contacts">
+            <a href="./index.html" class="footer__logo logo link"
+              >Web<span class="logo__item">Studio</span></a
+            >
+            <address>
+              <ul class="footer-list list">
+                <li class="footer-list__item">
+                  <a
+                    href="https://goo.gl/maps/xon16X926h8rYoWy8"
+                    target="_blank"
+                    class="footer-list__link link adress"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-list__item">
+                  <a href="mailto:info@example.com" class="footer-list__link link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-list__item">
+                  <a href="tel:+380991111111" class="footer-list__link link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social">
+            <h3 class="footer-social__title">присоединяйтесь</h3>
+            <ul class="social-list list">
+              <li class="social-list__item">
+                <a href="" target="_blank" class="social-list__link-footer social-list__link link"
+                  ><svg class="social-list__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="social-list__item">
+                <a href="" target="_blank" class="social-list__link-footer social-list__link link"
+                  ><svg class="social-list__icon">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="social-list__item">
+                <a href="" target="_blank" class="social-list__link-footer social-list__link link"
+                  ><svg class="social-list__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social-list__item">
                 <a
-                  href="https://goo.gl/maps/xon16X926h8rYoWy8"
+                  href=""
                   target="_blank"
-                  class="footer-list__link link adress"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li class="footer-list__item">
-                <a href="mailto:info@example.com" class="footer-list__link link"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="footer-list__item">
-                <a href="tel:+380991111111" class="footer-list__link link">+38 099 111 11 11</a>
+                  class="social-list__link-footer social-list__link link icon-linkedin"
+                  ><svg class="social-list__icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-social">
-          <h3 class="footer-social__title">присоединяйтесь</h3>
-          <ul class="social-list list">
-            <li class="social-list__item">
-              <a href="" target="_blank" class="social-list__link-footer social-list__link link"
-                ><svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="social-list__item">
-              <a href="" target="_blank" class="social-list__link-footer social-list__link link"
-                ><svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="social-list__item">
-              <a href="" target="_blank" class="social-list__link-footer social-list__link link"
-                ><svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="social-list__item">
-              <a
-                href=""
-                target="_blank"
-                class="social-list__link-footer social-list__link link icon-linkedin"
-                ><svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-subscribe">
           <h3 class="footer-subscribe__title">Подпишитесь на рассылку</h3>
@@ -432,7 +434,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -487,19 +489,20 @@
               type="checkbox"
               id="checkbox"
               name="input-check"
-              class="policy-check visually-hidden"
+              class="modal-form__policy-check visually-hidden"
             />
-            <label for="checkbox" class="policy-text"
-              ><span class="policy-check-svg"
-                ><svg class="icon-check" width="16" height="15">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg> </span
-              >Соглашаюсь с рассылкой и принимаю&nbsp
-              <a href="#" class="policy-link"> Условия договора</a></label
+            <label for="checkbox" class="modal-form__policy-text"
+              ><span class="policy-check__icon-wrap"
+                ><svg class="policy-check__icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              ><span
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="modal-form__policy-link"> Условия договора</a></span
+              ></label
             >
           </div>
-          <div class="form-btn">
-            <button type="submit" class="button-submit button primary">Отправить</button>
+          <div class="modal-form__btn-wrap">
+            <button type="submit" class="modal-form__btn button primary">Отправить</button>
           </div>
         </form>
       </div>

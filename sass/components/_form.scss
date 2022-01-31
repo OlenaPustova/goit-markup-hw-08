@@ -5,10 +5,13 @@
 }
 
 .modal__title {
-  @include font(20px, 700, 1.15, 0.03em);
+  @include font(20px, 700, 1.5, 0.03em);
 
   margin-bottom: 12px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    @include font(null, null, $lh: 1.15);
+  }
 }
 
 .modal-form__field {
@@ -65,13 +68,18 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  &-text {
-    @include centered-flex;
+}
+
+.modal-form__policy-text {
+  @include centered-flex;
+  @include font(12px, null, 1.16);
+
+  @media screen and (min-width: 1200px) {
     @include font(14px, null, 1.71);
   }
 }
 
-.policy-check-svg {
+.policy-check__icon-wrap {
   @include centered-flex;
   justify-content: center;
   width: 15px;
@@ -81,28 +89,28 @@
   margin-right: 7px;
 }
 
-.policy-link {
+.modal-form__policy-link {
   color: var(--accent-color);
 }
 
-.icon-check {
+.policy-check__icon {
   fill: transparent;
 }
 
-.policy-check:checked + .policy-text > .policy-check-svg {
+.modal-form__policy-check:checked + .modal-form__policy-text > .policy-check__icon-wrap {
   background-color: var(--accent-color);
   border: none;
 }
 
-.policy-check:checked + .policy-text .icon-check {
+.modal-form__policy-check:checked + .modal-form__policy-text .policy-check__icon {
   fill: var(--primary-white-color);
 }
 
-.form-btn {
+.modal-form__btn-wrap {
   display: flex;
   justify-content: center;
 }
 
-.button-submit {
+.modal-form__btn {
   padding: 10px 55px;
 }
