@@ -215,6 +215,9 @@
 .burger-contacts__item-tel {
   margin-bottom: 32px;
   .link {
+    @media screen and (max-width: 419px) {
+      font-size: 28px;
+    }
     @include font(34px, 500, 1.17, 0.02em);
     color: var(--accent-color);
   }
@@ -222,6 +225,9 @@
 .burger-contacts__item-mail {
   margin-bottom: 64px;
   .link {
+    @media screen and (max-width: 419px) {
+      font-size: 22px;
+    }
     @include font(24px, 500, 1.16, 0.02em);
     color: var(--primary-text-color);
   }
@@ -233,6 +239,9 @@
 
 .burger-social__item {
   .link {
+    @media screen and (max-width: 419px) {
+      font-size: 12px;
+    }
     @include font(18px, 500, 1.22, 0.02em);
     color: var(--accent-color);
   }
