@@ -3,8 +3,8 @@
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
   @media screen and (min-width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 25px;
@@ -12,11 +12,9 @@
   }
 
   .container {
-    // @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // }
   }
 }
 
@@ -93,7 +91,7 @@
 .nav-list__link.current::after {
   @media screen and (min-width: 768px) {
     position: absolute;
-    bottom: -39px;
+    bottom: -34px;
 
     content: '';
     display: block;

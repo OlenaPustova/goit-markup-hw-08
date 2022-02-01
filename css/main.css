@@ -468,8 +468,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -595,7 +595,7 @@ body {
 @media screen and (min-width: 768px) {
   .nav-list__link.current::after {
     position: absolute;
-    bottom: -39px;
+    bottom: -34px;
     content: '';
     display: block;
     width: 100%;
